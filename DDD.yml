@@ -1,0 +1,26 @@
+DDD
+	- Bounded Contexts - Natural division within a business
+			 Example:
+			 		Warehouse
+				 		Shipping
+					Store
+						Sales
+	- Entity
+	- Aggregate - is a collection of entities you talk to through a single portal
+	- Roles
+	- Actors
+	- Reactive & Declarative systems
+		- orchestration / Declarative systems
+		- choriographed / Reactive systems
+	- Demo setup
+		- orange note - Event (of interest to the business)
+		- blue note - Action (what do we want to have happen)
+		- red note - Questions (Things we have to do)
+		- purple note - Policy (Control how the action plays out)
+		- yelow note - Human Activities (Actions or events with himan input)
+		- pink note - External systems (Occured from the outside world)
+	- Demo flow
+		- We go through notes and desctibe consequently Events, Actions, Questions, Policy, Human act and Ext systems.
+		- On the next step we should identify Roles , who is responsible for the accoumplish the actions 
+		- Next is determine context and make context map with relationships between each other.
+		- And finaly we should make Entity map of entities and services with relationships.

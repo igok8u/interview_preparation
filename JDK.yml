@@ -1,0 +1,10 @@
+JDK 1.8
+    Lambda expressions - Lambda expressions allow you to write more concise and expressive code by providing a way to pass functionality as an argument to a method.
+    Functional interfaces - Functional interfaces are interfaces that have only one abstract method. They are used as the basis for lambda expressions.
+    Streams - Streams are a new way of working with collections in Java 8. They provide a way to process large amounts of data in parallel, and to perform operations on data without modifying the original source.
+    Default methods - Default methods allow you to add methods to an interface without breaking existing implementations.
+    Optional - Optional is a new class in Java 8 that is used to represent the presence or absence of a value. It is useful for dealing with null values and preventing NullPointerExceptions.
+    Method references - Method references allow you to refer to a method by its name, rather than by invoking it directly.
+    Date and time API - Java 8 introduces a new date and time API that is more comprehensive and easier to use than the old Date and Calendar classes.
+    Nashorn JavaScript engine - Nashorn is a new JavaScript engine that is integrated into Java 8. It allows you to run JavaScript code directly from Java, and to call Java code from JavaScript.
+    arallel arrays - Java 8 introduces new methods for processing arrays in parallel, which can improve performance on multi-core processors.
