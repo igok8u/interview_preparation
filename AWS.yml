@@ -1,119 +1,21 @@
-Java Core
-    Date time
-        LocalDateTime
-        ZonedDateTime = ZoneDateTime.of(LocalDateTime,ZoneId);
-        ZoneId = ZoneId.of("Europe/Berlin")
-        DateTimeFormatter = DateTimeFormatter.ofPattern("")
-        ChronoUnit
-    String
-        length()
-        charAt(int)
-        concat(String)
-        substring(beginIndex,endIndex)
-        replace()
-        split()
-        startsWith()
-        contains(CharSequence )
-        isEmpty()
-        equals()
-    Numbers 
-        BigDecimal
-            setScale(2, RoundingMode.HALF_UP)
-    Multithread
-        Thread
-        Runnable
-        interface ExecutorService = Executors.newFixedThreadPool(5);
-        ThreadPoolExecutor implements ExecutorService        
-        Future = executorService.submit(new Task());
-            isDone
-            isCancelled
-            addListner(Runnable,Executor)
-            get(T) - waiting for result and lock main call
-        Mutex, e.g. Lock lock = new ReentrantLock();
-            lock()
-            unlock()
-        Semaphore , e.g. Semaphore semaphore = new Semaphore(1);
-             acquire()
-             release()
-        
-    OOP
-        polymorphism -  is a concept in object-oriented programming that allows objects of different classes to be treated as objects of a common superclass or interface. 
-        encapsulation 
-        inheritance
-    Classes
-        Interface
-        Abstract class
-        Record
-        Enum
-        Class
-    Access modifiers
-        private
-        protected (only children in package)
-        public
-        default (only in package)
-    Exceptions
-        Checked
-        Unchecked
-    Arrays
-    Collections
-        Collection
-        List
-        Set
-        Map
-    Stream API
-    Lambda - anonymous functions
-    Optional
-        of()
-        empty()
-        ofNullable()
-        isPresent()
-        get()
-        orElse()
-        orElseThrow()
-        map()
-    Functional Interfaces
-        Supplier
-        Consumer
-        Function
-        Predicate
-        UnaryOperator
-        BinaryOpertor
-    Networking
-        Socket
-        ServerSocket
-    Java Memory Model
-        Heap (objects, arrays)
-        Stack (local variables,method's calls)
-        Method Area / Metaspace(from Java 8) (metadata classes, methods, static variables, strings,  )
-        Call stack
-        Processor registers
-    Class loaders
-        Bootstrap Class Loader
-        Extention Class Loader
-        Application Class Loader
-    Patterns
-        Creational
-            Factory Method
-            Abstract Factory
-            Prototype
-            Singleton
-            Builder
-        Structural
-            Adapter
-            Bridge
-            Composite
-            Decorator
-            Facade
-            Flyweight
-            Proxy
-        Behavioral
-            Template Method
-            Chain of Responsibilities
-            Command
-            Iterator
-            Mediator
-            Memento
-            Observer
-            State
-            Strategy
-            Visitor
+AWS
+    Amazo Elastic Compute Cloud - EC2
+    Amazon Elastic Service - ECS
+    Amazon Elastic Kubernetes Service - EKS
+    Amazon Elastic Block Store - EBS
+    Amazon Elastic File System - EFS
+    Amazon S3 (Simple Storage Service)
+    Amazon Aurora
+    Amazon DynamoDB
+    AWS Lambda
+    Amazon Api gateway
+    Amazon RDS
+    Amazon CloudFormation
+    Amazon Identity and Access Management
+    Amazon SQS
+    Amazon SNS
+    Amazon CloudWatch
+    Aws Step Fuction
+    AWS X-Ray
+    AWS App Mesh
+    AWS Secrets Manager

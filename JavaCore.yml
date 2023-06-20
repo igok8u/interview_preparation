@@ -1,10 +1,17 @@
 Java Core
-    Date time
+    Date time jdk8
         LocalDateTime
         ZonedDateTime = ZoneDateTime.of(LocalDateTime,ZoneId);
         ZoneId = ZoneId.of("Europe/Berlin")
         DateTimeFormatter = DateTimeFormatter.ofPattern("")
         ChronoUnit
+        Duration
+        Period
+    Date time legacy
+        Date
+        Calendar
+        SimpleDateFormat
+            parse()
     String
         length()
         charAt(int)
@@ -16,6 +23,7 @@ Java Core
         contains(CharSequence )
         isEmpty()
         equals()
+        +/StringBuilder/StringBuffer
     Numbers 
         BigDecimal
             setScale(2, RoundingMode.HALF_UP)
