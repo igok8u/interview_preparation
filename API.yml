@@ -1,0 +1,46 @@
+API
+	Tools
+		Postman
+		SoapUI
+		GraphQL
+	Type
+		SOAP
+		RESTful
+			Benefits
+				lose coupling
+				easy to implement
+				easy to use
+				start small and evolve over time
+			HATEOAS (Hypermedia As The Engine Of Application State)
+				Client interacts with Rest API entirely through the responses by the server
+	API Principles
+		Uniform Resource Identifier (URI)
+		Operations (GET POST PUT DELETE )
+		Formats
+		Stateless
+	Challanges
+		Clear naming
+		Clear directions
+		Knowledge of use case
+		Adaptability
+		Versioning
+		Backward compatibility
+	Design
+		Identify Participants
+		Identify Activities
+		Break into steps
+		Create API Defenitions 
+		Validate API
+        Stages
+            Goals and requirements
+            API Style (Rest, SOAP, GraphQL)
+            Endpoints
+            Data structure
+            Routing & Versioning
+            Documentation
+            Authentification & Authorization
+            Error Handling
+            Testing
+            Monitoring & Analytics
+        YARAS
+            

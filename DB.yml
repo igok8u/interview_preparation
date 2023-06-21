@@ -1,0 +1,5 @@
+Data bases
+    Hibernate
+        N+1 Problem
+            Caching
+            fetch = FetchType.EAGER

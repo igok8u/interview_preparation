@@ -47,3 +47,49 @@ Solution Architecture отвечает за тестирование решен�
 
 Мониторинг и поддержка
 Solution Architecture должен следить за работой решения в производственной среде, обеспечивать его надежную и безопасную работу, а также реагировать на проблемы и инциденты, которые могут возникнуть. Он должен управлять процессом мониторинга и поддержки, а также обеспечивать коммуникацию с пользователем и другими заинтересованными сторонами.
+
+Architecture
+	Functional requirements
+		Tasks
+		Use cases
+		Functionality
+	Non functional requirements
+		Significant quality attributes:
+			Performance: Defines the system's ability to efficiently perform its functions and process requests or data with minimal latency. Performance can be measured by metrics such as response time, throughput, delay, and resource utilization.
+			Reliability: Determines the system's ability to operate without failures and recover from failures. This includes ensuring availability, fault tolerance, recovery after failure, and data integrity.
+			Security: Ensures the protection of the system from unauthorized access, attacks, information leaks, and other security threats. It includes authentication, authorization, data encryption, access control, and auditing.
+			Usability: Determines how easy the system is to learn and use for users. It includes a user-friendly interface, intuitive actions, good organization, and navigation.
+			Scalability: Defines the system's ability to scale and support increased data volume, users, or workload. This may involve horizontal scaling (adding additional resources) or vertical scaling (increasing the power of existing resources).
+			Maintainability: Defines the level of ease and efficiency in maintaining, modifying, and extending the system over time. It includes code cleanliness, modularity, documentation, and testing.
+	Design stages for Clouds
+		Requirement Definition: This stage involves identifying the system requirements, both functional and non-functional. Explore the business needs, user expectations, and organizational goals while considering significant quality attributes such as performance, scalability, security, and reliability.
+		Architectural Design: At this stage, the overall architecture of the cloud system is developed. Determine the key components of the system, their interactions, and responsibilities. Consider using cloud services and technologies such as virtualization, containerization, serverless computing, cloud databases, etc.
+		API Design and Integration: If the system needs to expose APIs for interaction with other applications or services, design the API interfaces and develop an integration strategy. Consider utilizing RESTful APIs, microservices architecture, and other relevant integration patterns.
+		Data Storage Design: Decide how data will be managed and stored in the cloud. Evaluate options such as cloud databases, object storage, file systems, and other relevant services. Consider scalability, data availability, and security requirements.
+		Security Development: Pay special attention to security aspects when designing a cloud system. Develop strategies for authentication, authorization, data encryption, access control, and auditing. Ensure compliance with security requirements and standards such as GDPR or HIPAA, if applicable.
+		Scalability and Load Management: Account for system scalability to handle increased workloads. Develop strategies for horizontal and vertical scalability, load balancing, and automatic scaling when needed.
+		Testing and Debugging: Conduct thorough testing of the system to ensure its functionality, performance, and reliability. Incorporate monitoring and logging mechanisms to track system behavior and identify issues.
+		Deployment and Management: Deploy the system in the cloud, following deployment and management strategies. Automate deployment and management processes using configuration management tools, container orchestration, etc.
+		Monitoring and Optimization: Establish monitoring and optimization mechanisms for the cloud system. Monitor performance, availability, and security of the system, and identify bottlenecks for continuous improvement.
+		Upgrading and Support: Plan for system upgrades and long-term support. Consider growth plans and system evolution, as well as external changes such as cloud provider updates or user requirements.
+	Patterns
+		Layered Architecture: Organizes the system into multiple horizontal layers, each with a specific responsibility, to achieve separation of concerns and modular design.
+		Microservices Architecture: Decomposes the system into small, independent services that communicate through lightweight protocols. Each service focuses on a specific business capability.
+		Event-Driven Architecture: Emphasizes the production, detection, and consumption of events to enable loose coupling and scalability. Components communicate asynchronously through events.
+		Service-Oriented Architecture (SOA): Designs the system as a collection of services that are loosely coupled, self-contained, and can be orchestrated to fulfill business requirements.
+		Model-View-Controller (MVC): Separates the application logic into three interconnected components: the model (data and business logic), the view (user interface), and the controller (handles user input and updates the model and view).
+		Model-View-ViewModel (MVVM): Similar to MVC, but specifically designed for user interfaces. The view model acts as an intermediary between the view and the model, providing data and handling user interactions.
+		Publish-Subscribe Pattern: Allows components to communicate by subscribing to and receiving events or messages published by other components, promoting loose coupling and decoupled communication.
+		Client-Server Architecture: Divides the system into clients (requestors of services) and servers (providers of services), enabling distributed processing and resource sharing.
+		Peer-to-Peer Architecture: Enables nodes in a network to act both as clients and servers, facilitating direct communication and resource sharing without relying on a central server.
+		Event Sourcing: Stores the state of an application as a sequence of events, which can be used to rebuild past states and derive current state, providing an audit trail and scalability for event-driven systems.
+		CQRS (Command Query Responsibility Segregation): Separates read and write operations into distinct models, optimizing each for their specific requirements to achieve scalability and performance.
+		Repository Pattern: Provides a layer of abstraction between the application and the data persistence layer, encapsulating data access logic and promoting modularity and testability.
+		Gateway Pattern: Acts as an entry point to a system or a microservices architecture, handling requests from clients, routing them to the appropriate services, and providing additional functionalities like caching or authentication.
+		Singleton Pattern: Restricts the instantiation of a class to a single instance, ensuring global access to that instance throughout the application.
+		Factory Pattern: Provides an interface for creating objects without specifying their concrete classes, encapsulating the object creation process and allowing flexibility and extensibility.
+		Observer Pattern: Defines a one-to-many dependency between objects, where changes in one object (the subject) notify and update other dependent objects (the observers) automatically.
+		Proxy Pattern: Wraps an object to control access to it, providing an additional layer of indirection. Proxies can be used to implement caching, logging, or security checks.
+		Pipeline Pattern: Divides a complex operation into a series of smaller, interconnected stages or steps, where each step processes the input and passes it to the next step, achieving modularity and reusability.
+		Map-Reduce Pattern: Processes large amounts of data in parallel by splitting it into smaller chunks, mapping each chunk to intermediate results, and reducing the intermediate results to produce the final output.
+		Bulkhead Pattern: Isolates different parts of a system to limit the impact of failures, ensuring that failures in one component do not affect the overall system's performance or availability.
